@@ -78,7 +78,8 @@ const ROUTES = {
     save: 'media/<%= id %>/save/',
     unsave: 'media/<%= id %>/unsave/',
     userStory: 'feed/reels_media/',
-    storyTray: 'feed/reels_tray/'
+    storyTray: 'feed/reels_tray/',
+    newsInbox: 'news/inbox/?app_badging_enabled=true'
 };
 
 
