@@ -117,4 +117,8 @@ Helpers.dataToRequestOption = function (data, filename) {
     return {value: raw, options: options}
 }
 
+Helpers.extractUrl = function (text) {
+  return text.match(/((?:https\:\/\/)|(?:http\:\/\/)|(?:www\.))?([a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(?:\??)[a-zA-Z0-9\-\._\?\,\'\/\\\+&%\$#\=~]+)/g);
+}
+
 module.exports = Helpers;
