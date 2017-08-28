@@ -240,7 +240,7 @@ Thread.configureText = function(session, users, text) {
     }
 
     if(link_urls) {
-        payload.link.text = text;
+        payload.link_text = text;
         payload.link_urls = link_urls;
         endpoint = 'threadsBrodcastLink';
     } else {
